@@ -91,3 +91,20 @@
 		}
 	}
 }
+
+@media (max-width: 768px) {
+	.navbar {
+		.wrapper {
+			.left {
+				.logo {
+					font-size: 30px;
+					font-weight: 500;
+				}
+
+				.itemContainer {
+					display: none;
+				}
+			}
+		}
+	}
+}

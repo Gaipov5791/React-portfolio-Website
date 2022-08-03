@@ -1,5 +1,5 @@
 import Navbar from "./components/navbar/Navbar";
-import Intro from "./components/intro/Intro";
+// import Intro from "./components/intro/Intro";
 import Portfolio from "./components/portfolio/Portfolio";
 import Works from "./components/works/Works";
 import Testimonials from "./components/testimonials/Testimonials";
@@ -15,7 +15,7 @@ function App() {
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
 		<Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="section">
-        <Intro />
+        {/* <Intro /> */}
         <Portfolio />
         <Works />
         <Testimonials />
