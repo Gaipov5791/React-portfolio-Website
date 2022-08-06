@@ -4,9 +4,10 @@ import {Person, Mail} from "@mui/icons-material";
 function Navbar({menuOpen, setMenuOpen }) {
 	return (
 		<div className={"navbar " + (menuOpen && "active")}>
-			<div className="wrapper">
+			<div className="container">
+				{/* <div className="wrapper"> */}
 				<div className="left">
-					<a href="#intro" className="logo">Bakyt.</a>
+					<a href="#intro" className="logo">Bakyt</a>
 					<div className="itemContainer">
 						<Person className="icon"/>
 						<span>+996 556 01 68 98</span>
@@ -24,6 +25,8 @@ function Navbar({menuOpen, setMenuOpen }) {
 					</div>
 				</div>
 			</div>
+			{/* </div> */}
+			
 		</div>
 	)
 }

@@ -1,14 +1,95 @@
+.home {
+	background-color: #fff;
+
+	&__container {
+		padding-top: 20px;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		text-align: center;
+		gap: 30px;
+	}
+
+	&__img {
+		max-width: 500px;
+		height: 500px;
+		overflow-y: hidden;
+	}
+
+	&__right {
+		position: relative;
+
+		h2 {
+			font-size: 35px;
+			margin: 10px 0;
+		}
+
+		h1 {
+			font-size: 60px;
+		}
+
+		h3 {
+			font-size: 30px;
+
+			span {
+				color: crimson;
+			}
+
+			.ityped-cursor {
+				animation: blink 1s infinite;
+			}
+
+			@keyframes blink {
+				50% {
+					opacity: 1;
+				}
+
+				100% {
+					opacity: 0;
+				}
+			}
+		}
+	}
+
+	a {
+		position: absolute;
+		bottom: 10px;
+		left: 55%;
+
+		img {
+			width: 30px;
+			animation: arrowBlink 2s infinite;
+		}
+
+		@keyframes arrowBlink {
+			100% {
+				opacity: 0;
+			}
+		}
+	}
+}
+
+
+
+
+// // .container {
+
 // .intro {
+// 	padding-top: 20px; // add
 // 	background-color: #fff;
+
+
 // 	display: flex;
+// 	justify-content: center; // add
+// 	gap: 30px; //add
 
 // 	.left {
-// 		flex: 0.5;
+// 		// flex: 0.5; // commm
 // 		overflow: hidden;
 
 // 		.imgContainer {
-// 			width: 700px;
-// 			height: 700px;
+// 			width: 600px;
+// 			height: 600px;
 // 			background-color: rgb(10, 29, 43);
 // 			border-radius: 50%;
 // 			display: flex;
@@ -18,11 +99,72 @@
 // 		}
 
 // 		img {
+// 			width: 90%;
 // 			height: 90%;
 // 		}
 // 	}
 
 // 	.right {
-// 		flex: 0.5;
+// 		// flex: 0.5; // comm
+// 		position: relative;
+
+// 		.wrapper {
+// 			width: 100%;
+// 			height: 100%;
+// 			padding-left: 50px;
+// 			display: flex;
+// 			flex-direction: column;
+// 			justify-content: center;
+
+// 			h1 {
+// 				font-size: 60px;
+// 				margin: 10px 0;
+// 			}
+
+// 			h2 {
+// 				font-size: 35px;
+// 			}
+
+// 			h3 {
+// 				font-size: 30px;
+
+// 				span {
+// 					font-size: inherit;
+// 					color: crimson;
+// 				}
+
+// 				.ityped-cursor {
+// 					animation: blink 1s infinite;
+
+// 				}
+
+// 				@keyframes blink {
+// 					50% {
+// 						opacity: 1;
+// 					}
+
+// 					100% {
+// 						opacity: 0;
+// 					}
+// 				}
+// 			}
+// 		}
+
+// 		a {
+// 			position: absolute;
+// 			bottom: 10px;
+// 			left: 40%;
+
+// 			img {
+// 				width: 30px;
+// 				animation: arrowBlink 2s infinite;
+// 			}
+
+// 			@keyframes arrowBlink {
+// 				100% {
+// 					opacity: 0;
+// 				}
+// 			}
+// 		}
 // 	}
 // }
